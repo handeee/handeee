@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jira Görev Yönetimi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Görev Yönetimi</h1>
+    </header>
+
+    <!-- Görev Ekleme ve Düzenleme Formu -->
+    <section class="task-create">
+      <h3 id="form-title">Lütfen Görev Ekleyiniz</h3>
+      <form id="task-form" class="task-form">
+        <label for="task-title" class="task-label">Başlık</label>
+        <input type="text" id="task-title" class="task-input" placeholder="Görev başlığını giriniz" required>
+    
+        <label for="task-desc" class="task-label">Açıklama</label>
+        <textarea id="task-desc" class="task-input" rows="4" placeholder="Görev açıklamasını giriniz" required></textarea>
+    
+        <button type="submit" class="task-button" id="submit-button">Oluştur</button>
+      </form>
+    </section>
+    
+
+    <!-- Görev Listesi -->
+    <section class="task-list">
+      <h2>Görevler</h2>
+      <div id="task-container"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

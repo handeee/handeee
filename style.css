@@ -1,0 +1,199 @@
+/* Genel Stil */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9ff;
+  color: #444;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #2F80ED;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Form Stili */
+.task-create {
+  background: #ffffff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+}
+
+.task-create::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('https://www.example.com/fringe-pattern-top-left.png'); /* Üst sol saçak */
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -20px;
+  left: -20px;
+}
+
+.task-create::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 130px;
+  background-image: url('solresim.png'); /* Sağ üst görsel */
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -35px;
+  right: -15px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.task-input {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: #2F80ED;
+  outline: none;
+  box-shadow: 0 0 8px rgba(47, 128, 237, 0.2);
+}
+
+/* Düzenle Butonu */
+.task-edit {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFD700; /* Altın Sarısı */
+  color: black;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.task-edit:hover {
+  background-color: #FFC107; /* Daha parlak sarı */
+  transform: scale(1.05);
+}
+
+/* Sil Butonu */
+.task-delete {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e63946; /* Daha güzel kırmızı */
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.task-delete:hover {
+  background-color: #d62828; /* Daha koyu kırmızı */
+  transform: scale(1.05);
+}
+
+/* Görev Listesi */
+.task-list {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-image: url('https://www.example.com/background-pattern.jpg'); /* Örnek bir arka plan görseli */
+  background-size: cover;
+  background-position: center;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #f4f9ff;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-title {
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+}
+
+.task-desc {
+  font-size: 14px;
+  color: #777;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.task-actions button {
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Yeni Görev Ekle Butonu */
+.task-button {
+  background-color: #2F80ED;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-button:hover {
+  background-color: #1E5ABD;
+  transform: translateY(-2px);
+}
